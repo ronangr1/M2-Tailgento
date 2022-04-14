@@ -10,7 +10,6 @@
     - [Setup the module](#setup-the-module)
 - [Features](#features)
 - [Settings](#settings)
-- [Documentation](#documentation)
 - [Support](#support)
 - [Authors](#authors)
 - [License](#license)
