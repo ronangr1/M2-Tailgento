@@ -1,0 +1,27 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind CSS for Magento 2",
+  "main": "tailwind.config.js",
+  "author": "Ronan Guérin",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "tailwind-colors": "^1.1.0"
+  },
+  "scripts": {
+    "start": "npm run start:css",
+    "start:css": "npx tailwindcss-cli build -i ./src/styles.css -o ../web/css/tailwind.css",
+    "build": "npm run build:css",
+    "build:css": "NODE_ENV=production npx tailwindcss-cli build -i ./src/styles.css -o ../web/css/tailwind.css -m",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
