@@ -3,7 +3,7 @@
     "description": "Tailwind CSS for Magento 2 Admin",
     "type": "magento2-module",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         {
             "name": "Ronan Guérin",
