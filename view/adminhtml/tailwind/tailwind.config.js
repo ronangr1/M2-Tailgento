@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
     content: [
         '../../**/*.phtml',
@@ -25,5 +23,9 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
-    ],
+        {
+            autoprefixer: {},
+            ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+        }
+    ]
 }
