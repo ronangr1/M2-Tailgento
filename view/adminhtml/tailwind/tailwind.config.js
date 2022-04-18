@@ -1,9 +1,7 @@
 module.exports = {
     content: [
-        '../../**/*.phtml',
-        '../../**/*.html',
-        '../../../design/frontend/**/*.phtml',
-        '../../../design/frontend/**/*.html',
+        '../../../../**/*.phtml',
+        '../../../../**/*.html',
     ],
     theme: {
         extend: {
@@ -22,10 +20,6 @@ module.exports = {
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
         require('@tailwindcss/line-clamp'),
-        require('@tailwindcss/aspect-ratio'),
-        {
-            autoprefixer: {},
-            ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
-        }
+        require('@tailwindcss/aspect-ratio')
     ]
 }
